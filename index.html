@@ -1,62 +1,236 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Artikel</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DRUM</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <style type="text/css">
+            #main-navbar {
+                transition: 0.3s;
+            }
+        </style>
+    </head>
 
-	<div class="container">	
-		<div class="header">
-			<h1 class="judul">Drum</h1>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Chord</a></li>
-				<li><a href="#">Lirik</a></li>
-				<li><a href="#">Lagu</a></li>
-			</ul>
-		</div>
-			<div class="hero"></div>
-			<div class="content">
+    <style>
+        .font-color{
+            color: #6d5442;
+        }
+        .font-contact{
+            color: rgb(192, 146, 115);
+        }
+        .bg-product{
+              weight: 100px;
+                background :   #ffc299;
+        }
+        .flowercard{
+            box-shadow: 0 0 30px rgba(146, 144, 144, 0.452);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .bg-footer{
+                background :   #6d5442;
+        }
+        .main-content h1 {
+	        margin-top: 0;
+        }
+    </style>
 
-				<p>Drum adalah salah satu dari keluarga besar alat musik perkusi yang terdiri dari kulit yang direntangkan dan dipukul menggunakan tangan atau sebuah batang sama seperti halnya alat musik tifa cara memainkannya dengan cara dipukul-pukul. Selain kulit, drum juga dibuat dari bahan lain, contohnya plastik. Perlu anda ketahui juga bahwa drum terdapat di seluruh dunia dan memiliki banyak jenisnya, misalnya yaitu snare, drum, bas, tom, quarto, bedug, timpani, kendang, Bodhrán, Ashikodan lain-lain. Dalam musik pop, jazz, dan rock, drum biasanya mengarah kepada drum kit atau drum set, drum kit atau drum set merupakan sekelompok drum yang terdiri dari snare drum, bass drum, tom, hi-hat, cymbal dan kadang ditambah berbagai alat musik drum listrik dengan tujuan untuk memperkaya suara yang dihasilkan.</p>
+    <body>
+        <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand" href="#">DRUM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link font-color" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link font-color" href="#Jenis Musik Drum">Jenis Musik Drum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-color" href="#Artist">Artist</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- carousel start -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade vh-100">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                    <img src="image/picture 1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="image/picture 2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="image/picture 3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel end -->
+        <!-- main content start -->
+        <!-- Home start -->
+        <div id="Home" class="container-fluid">
 
-				<td>Jenis-jenis musik Drum:
-				   <li>Thomas Lang</li>
-               <li>Drum set Travis Barker</li>
-               <li>Drum Set Nell Ellwood Peart</li>
-               <li>Drum Set Nathan Jonas Jordison</li>
-				
-				</td>
+            <div class="row">
+                <div class="col-12 text-center"></div>
+                <center><h2 class="display-5 pt-5 font-color" data-aos="fade-up">Home</h2></center>
+                <div class="col-md-7 main-content pt-4">
+                    <p>Awal perkembangan drum bermula pada tahun 1890-an dikembangkan oleh orang-orang Afrika-Amerika di Amerika Selatan, saat itu kelompok-kelompok band memainkan alat musik drum dengan posisi berdiri dan berbentuk pardede atau berkeliling dijalanan.  Pada saat itu perangkat drum belum disusun dalam satu kesatuan yang kompleks, akan tetapi masih terpisah-pisah dan satu alat dimainkan oleh satu orang. Drum adalah salah satu dari keluarga besar alat musik perkusi yang terdiri dari kulit yang direntangkan dan dipukul menggunakan tangan atau sebuah batang sama seperti halnya alat musik tifa cara memainkannya dengan cara dipukul-pukul. Selain kulit, drum juga dibuat dari bahan lain, contohnya plastik. Perlu anda ketahui juga bahwa drum terdapat di seluruh dunia dan memiliki banyak jenisnya, misalnya yaitu snare, drum, bas, tom, quarto, bedug, timpani, kendang, Bodhrán, Ashikodan lain-lain. Dalam musik pop, jazz, dan rock, drum biasanya mengarah kepada drum kit atau drum set, drum kit atau drum set merupakan sekelompok drum yang terdiri dari snare drum, bass drum, tom, hi-hat, cymbal dan kadang ditambah berbagai alat musik drum listrik dengan tujuan untuk memperkaya suara yang dihasilkan.</p>
+                </div>
+                <div class="col-md-5">
+                    <video class="img-thumbnail" src="image/video.mp4" loop autoplay muted></video>
+              </div>
+                </div>
+                </div>
+            </div>
+        <!-- Home end -->
+        <!-- photo start -->
+        <!-- Jenis Musik Drum start --> 
+        <div id="Jenis Musik Drum" class="container-fluid">
+        <div class="row">
+            <div id="Jenis Musik Drum" class="bg-product">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-5 pt-5 font-color">Jenis Musik Drum</h1>
+                    </div>
+                </div>
+                
+                <div class="row g-3">
+                <div class="col-4" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                    <div class="px-5 pt-5">
+                        <img src="image/Drum Rolling.jpg" class="img-fluid flowercard" alt="">
+                    </div>
+                    <div class="text-center pt-3">
+                        <h4>Drum Rolling</h4>
+                    </div>
+                </div>
+                <div class="col-4" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                    <div class="px-5 pt-5">
+                        <img src="image/Drum Mapex Mars.jpg" class="img-fluid flowercard" alt="">
+                    </div>
+                    <div class="text-center pt-3">
+                        <h4>Drum Mapex Mars</h4>
+                    </div>
+                </div>
 
-				<br>
-				<p>Awal perkembangan drum bermula pada tahun 1890-an dikembangkan oleh orang-orang Afrika-Amerika di Amerika Selatan, saat itu kelompok-kelompok band memainkan alat musik drum dengan posisi berdiri dan berbentuk pardede atau berkeliling dijalanan.  Pada saat itu perangkat drum belum disusun dalam satu kesatuan yang kompleks, akan tetapi masih terpisah-pisah dan satu alat dimainkan oleh satu orang.</p>
+                <div class="col-4" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                    <div class="px-5 pt-5">
+                        <img src="image/Drum Tama Rockstart.jpg" class="img-fluid flowercard" alt="">
+                    </div>
+                    <div class="text-center pt-3">
+                        <h4>Drum Tama Rockstart</h4>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jenis Musik Drum end -->
 
-				<td>Bagian Alat Musik Drum: 
-                <ol>
-                   <li>A- Bass Drum</li>
-                   <li>B-Snare Drum</li>
-                   <li>C-Hi-Hat</li>
-                   <li>D-Pedal Drum Bass</li>
-                   <li>E-Ride</li>
-                   <li>F&G-Tom-Toms</li>
-                   <li>H-Floor Tom</li>
-                   <li>I-Cymbal Stand</li>
-                   <li>J-Hi Hat Stand for Hi Hat cymbals</li>
-                   <li>K-Hi Hat Clutch</li>
-                   <li>L-Crass</li>
-                   <li>M-Snare Stand</li>
-                   <li>N-Mount for tom(s) to be mounted on Bass Drum</li>
-                   <li>O-Bangku</li>
-               </ol>
-               </td> 
+        <!-- Artist start -->
+        <div id="Artist" class="container-fluid">
+        <div class="row">
+            <div id="Artist">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-5 pt-5 font-color">Artist</h1>
+                    </div>
+                </div>
+                
+                <div class="row g-2 g-md-2 pt-4">
+                                <div class="col-2">
+                                    <img src="image/CALVIN RODGERS.jpg"
+                                        class="rounded-circle img-fluid shadow-1 " alt="woman avatar" width="200" height="200" />
+                                </div>
+                                <div class="col-5" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                                <div class="px-5 pt-5 flowercard">
+                                <div class="col-lg-8">
+                                    <p class="fw-bold lead mb-2"><strong>CALVIN RODGERS</strong></p>
+                                    <p class="text-muted fw-light mb-4">
+                                        Calvin Rodgers lahir dalam keluarga musisi, di sisi selatan Chicago, Illinois. Sebagai seorang anak kecil, orang tuanya langsung menyadari kecintaannya pada musik, dan terutama kecintaannya pada drum.Ayahnya Willie Rodgers, seorang penulis lagu dan musisi terkenal, mendorong pemberian Calvin dan segera mulai mengembangkannya, dengan terus-menerus menuangkannya ke dalam dirinya. Seringkali, ayah Calvin akan membawanya ke latihan larut malam dan sesi studio, untuk menawarinya kesempatan untuk menonton dan belajar dari musisi veteran yang sering bekerja dengan ayahnya.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-			</div>
-			<div class="footer">
-				<p class="copy">Copyright 2022.I Putu Noha Risaldy</p>
-			</div>
+                                <div class="row g-2 g-md-2 pt-4">
+                                    <div class="col-2">
+                                        <img src="image/Matt Halpern.jpg"
+                                            class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="200" height="200" />
+                                    </div>
+                                    <div class="col-5" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                                    <div class="px-5 pt-5 flowercard">
+                                    <div class="col-lg-8">
+                                        <p class="fw-bold lead mb-2"><strong>MATT HALPERN</strong></p> 
+                                        <p class="text-muted fw-light mb-4">
+                                            Matt Halpern adalah drummer Periphery dan salah satu pendiri perusahaan perangkat lunak, GetGood Drums. Dia adalah seorang pendidik aktif yang sangat bersemangat untuk menginspirasi siswa dan seniman untuk menggunakan kreativitas mereka untuk mengejar bakat mereka sebagai karir. Matt telah memenangkan banyak penghargaan termasuk Dokter/Pendidik Terbaik dan Drummer Metal Terbaik di Majalah Drummer Modern, serta banyak penghargaan lainnya, dan dia terus menjadi anggota komunitas drum yang sangat aktif. Anda dapat menghubungi Matt kapan saja melalui Instagram dan Twitter di @MattPeriphery dan di Facebook di Facebook.com/MattPeriphery.
+                                        </p>                            
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
 
-	</div>
+                            <div class="row g-2 g-md-2 pt-4">
+                                <div class="col-2">
+                                    <img src="image/RAY LUZIER.jpg"
+                                        class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="200" height="200" />
+                                </div>
+                                <div class="col-5" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                                <div class="px-5 pt-5 flowercard">
+                                <div class="col-lg-8">
+                                    <p class="fw-bold lead mb-2"><strong>RAY LUZIER</strong></p>
+                                    <p class="text-muted fw-light mb-4">
+                                       Saya telah menjadi drummer baru di KORN sejak Oktober '07. Kami melakukan tur dunia luar negeri besar-besaran tahun ini... lihat KORN.com untuk klip video langsung dan di balik layar darinya.Sebelum KORN, saya adalah drummer di ARMY OF ANYONE, yang menampilkan artis multi-platinum Robert dan Dean DeLeo dari STONE TEMPLE PILOTS dan Richard Patrick dari FILTER. CD debut kami, yang kami produksi bersama Bob Ezrin (Pink Floyd, Jane's).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        <!-- Artist end -->
 
-</body>
+        <!-- photo end -->
+        <!-- main content end -->
+        <!-- footer start -->
+        <div class="p-2 text-center text-white bg-footer">@copyright 2023 - I Putu Noha Risaldy
+        </div>
+        <!-- footer end -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init();
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 460) {
+                    $('#main-navbar').addClass('bg-body-tertiary');
+                } else {
+                    $('#main-navbar').removeClass('bg-body-tertiary');
+                }
+            });
+        </script>
+    </body>
 </html>
